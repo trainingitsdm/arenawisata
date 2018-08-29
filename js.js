@@ -16,7 +16,7 @@ if(LINK=="about:blank"){
 	HTML+='</body></html>';
 	document.body.innerHTML = HTML;
 }else {
-	document.body.innerHTML = "SAPI";
+	document.body.innerHTML += "SAPI";
 }
 	
 if(LINK.indexOf("medium.com")>-1){	
