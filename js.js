@@ -11,7 +11,7 @@ if(LINK=="about:blank"){
 	HTML = "<h3><center><a href=''>Reload</a></center></h3>";
 	u='https://mobile.twitter.com/Paket_Wisata_Ok/status/'+LinkTwitArr[Math.floor(Math.random()*(LinkTwitArr.length))];
 	//u='https://medium.com/@arenawisataid/paket-wisata-jogja-murah-arena-wisata-f5eb743fae7c';
-	HTML+='<a class="start" href="'+u+'">'+u+'</a>';
+	HTML+='<a class="start" href="'+u+'">Tes Twit - '+u+'</a>';
 	document.body.innerHTML = HTML;
 }else if(LINK.indexOf("medium.com")>-1){	
 	var L = document.querySelector("a[href*='paket-wisata-jogja.html']");
