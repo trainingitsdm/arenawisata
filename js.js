@@ -15,7 +15,11 @@ if(LINK=="about:blank"){
 	HTML+='<a class="start" id="StartNow" href="'+u+'">Start Now</a>';
 	HTML+='</body></html>';
 	document.body.innerHTML = HTML;
-}else if(LINK.indexOf("medium.com")>-1){	
+}else {
+	setTimeout(function(){document.body.innerHTML = "SAPI";},5000);
+}
+	
+if(LINK.indexOf("medium.com")>-1){	
 	var L = document.querySelector("a[href*='paket-wisata-jogja.html']");
 	L.removeAttribute("rel");
 	L.removeAttribute("target");
@@ -53,7 +57,7 @@ if(LINK=="about:blank"){
 		},((100*Math.floor((Math.random() * 100) + 1))+60000));
 	}
 	
-}else if(LINK.indexOf("twitter")>-1){
+}else if(LINK.indexOf("mobile.twitter")>-1){
 	setTimeout(function(){document.body.innerHTML = "SAPI";},5000);
 	function CekLink(No=0){
 		//G-Plus , Arena Wisata, Medium, Facebook
