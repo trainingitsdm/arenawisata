@@ -7,7 +7,6 @@ function scrZN(z) {
 	} else scrZN(0);
 }
 LinkTwitArr=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"];
-LinkTwitArr=["1033880969365712896"];
 if(LINK=="about:blank"){	
 	HTML = "<h3><center><a href=''>Reload</a></center></h3>";
 	LTwt = LinkTwitArr[Math.floor(Math.random()*(LinkTwitArr.length))];
