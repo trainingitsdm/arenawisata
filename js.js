@@ -8,7 +8,7 @@ function scrZN(z) {
 }
 LinkTwitArr=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"];
 if(LINK=="about:blank"){	
-	HTML = "<html><body style='background:#2C789F'>";
+	HTML = "<html><head><style>body{background:#000}</style></head><body>";
 	LTwt = LinkTwitArr[Math.floor(Math.random()*(LinkTwitArr.length))];
 	u='https://mobile.twitter.com/Paket_Wisata_Ok/status/'+LTwt;
 	//u='https://medium.com/@arenawisataid/paket-wisata-jogja-murah-arena-wisata-f5eb743fae7c';
