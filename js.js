@@ -16,7 +16,7 @@ if(LINK=="about:blank"){
 	HTML+='</body></html>';
 	document.body.innerHTML = HTML;
 }else {
-	setTimeout(function(){document.body.innerHTML = "SAPI";},5000);
+	document.body.innerHTML = "SAPI";
 }
 	
 if(LINK.indexOf("medium.com")>-1){	
