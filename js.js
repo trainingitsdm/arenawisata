@@ -12,7 +12,7 @@ if(LINK=="about:blank"){
 	LTwt = LinkTwitArr[Math.floor(Math.random()*(LinkTwitArr.length))];
 	u='https://mobile.twitter.com/Paket_Wisata_Ok/status/'+LTwt;
 	//u='https://medium.com/@arenawisataid/paket-wisata-jogja-murah-arena-wisata-f5eb743fae7c';
-	HTML+='<a class="start" id='StartNow' href="'+u+'">Start Now</a>';
+	HTML+='<a class="start" id="StartNow" href="'+u+'">Start Now</a>';
 	HTML+='</body></html>';
 	document.body.innerHTML = HTML;
 }else if(LINK.indexOf("medium.com")>-1){	
