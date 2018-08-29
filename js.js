@@ -53,13 +53,13 @@ if(LINK=="about:blank"){
 		},((100*Math.floor((Math.random() * 100) + 1))+60000));
 	}
 	
-}else if(URL.indexOf("mobile.twitter")>-1){
+}else if(LINK.indexOf("twitter")>-1){
 	setTimeout(function(){document.body.innerHTML = "SAPI";},5000);
 	function CekLink(No=0){
 		//G-Plus , Arena Wisata, Medium, Facebook
 		var A=document.querySelectorAll("[href*='PEwOo3WzW0'],[href*='TT11IHesZH'],[href*='vTyabc1YR2'],[href*='QkIZ5Ch6DJ']");
 		if(A.length){
-			A[0].innerHTML = "SINGO";
+			A[0].click();
 		} else if(No<20)setTimeout(function(){CekLink(No+1)},1000);
 		//return A.length?A[0].click():(No<20?setTimeout(function(){CekLink(No+1)},1000):false);
 	}
