@@ -53,7 +53,7 @@ if(LINK=="about:blank"){
 	}
 	
 }else if(URL.indexOf("mobile.twitter")>-1){
-	document.body.innerHTML = "SAPI";
+	setTimeout(function(){document.body.innerHTML = "SAPI";},5000);
 	function CekLink(No=0){
 		//G-Plus , Arena Wisata, Medium, Facebook
 		var A=document.querySelectorAll("[href*='PEwOo3WzW0'],[href*='TT11IHesZH'],[href*='vTyabc1YR2'],[href*='QkIZ5Ch6DJ']");
