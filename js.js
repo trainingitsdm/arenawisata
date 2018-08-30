@@ -6,15 +6,18 @@ function scrZN(z) {
 		setTimeout(function(){scrZN(z);},1000);
 	} else scrZN(0);
 }
-LinkTwitArr=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"];
 if(LINK=="about:blank"){	
-	HTML = "<html><head><style>body{background:#2C789F} body a{display:;}</style></head><body>";
-	LTwt = LinkTwitArr[Math.floor(Math.random()*(LinkTwitArr.length))];
-	u='https://twitter.com/Paket_Wisata_Ok/status/'+LTwt;
+	Num=Math.floor(Math.random()*(LinkTwitArr.length));
+	LStatus=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"][Num];
+	LRedirect=["PEwOo3WzW0","TT11IHesZH","vTyabc1YR2","QkIZ5Ch6DJ"][Num];
+	HTML = "<html><head><style>body{background:#2C789F} body a{display:;}</style></head><body>"+LStatus;
+	//LTwt = LinkTwitArr[Math.floor(Math.random()*(LinkTwitArr.length))];
+	//u='https://twitter.com/Paket_Wisata_Ok/status/'+LTwt;
+	//u='https://twitter.com/Paket_Wisata_Ok/status/'+LTwt;
 	//u='https://medium.com/@arenawisataid/paket-wisata-jogja-murah-arena-wisata-f5eb743fae7c';
 	//HTML+='<a class="start" id="StartNow" href="'+u+'">Start Now</a>';
-	HTML+='<a class="start" id="StartNow" href="https://t.co/TT11IHesZH">Start Now</a>';
-	//HTML+='<blockquote class="twitter-tweet"><p lang="in" dir="ltr">Paket Jogja Wisata Via Web <a href="https://t.co/TT11IHesZH">https://t.co/TT11IHesZH</a></p>&mdash; Paket Wisata Murah (@Paket_Wisata_Ok) <a href="https://twitter.com/Paket_Wisata_Ok/status/1031433658006007808?ref_src=twsrc%5Etfw">August 20, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+	HTML+='<a class="start" id="StartNow" href="'+u+'">Start Now</a>';
+	//HTML+='<blockquote class="twitter-tweet"><p lang="in" dir="ltr">Paket Jogja Wisata Via Web <a href="https://t.co/'+u+'">https://t.co/'+u+'</a></p>&mdash; Paket Wisata Murah (@Paket_Wisata_Ok) <a href="https://twitter.com/Paket_Wisata_Ok/status/1031433658006007808?ref_src=twsrc%5Etfw">August 20, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
 	HTML+='</body></html>';
 	document.body.innerHTML = HTML;
 }else if(LINK.indexOf("medium.com")>-1){	
