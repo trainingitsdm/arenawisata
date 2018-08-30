@@ -8,9 +8,9 @@ function scrZN(z) {
 }
 if(LINK=="about:blank"){	
 	Num=Math.floor(Math.random()*(LinkTwitArr.length));
-	LStatus=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"][Num];
-	LRedirect=["PEwOo3WzW0","TT11IHesZH","vTyabc1YR2","QkIZ5Ch6DJ"][Num];
-	HTML = "<html><head><style>body{background:#2C789F} body a{display:;}</style></head><body>"+LStatus;
+	LStatus=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"];
+	LRedirect=["PEwOo3WzW0","TT11IHesZH","vTyabc1YR2","QkIZ5Ch6DJ"];
+	HTML = "<html><head><style>body{background:#2C789F} body a{display:;}</style></head><body>"+LStatus[Num];
 	//LTwt = LinkTwitArr[Math.floor(Math.random()*(LinkTwitArr.length))];
 	//u='https://twitter.com/Paket_Wisata_Ok/status/'+LTwt;
 	//u='https://twitter.com/Paket_Wisata_Ok/status/'+LTwt;
