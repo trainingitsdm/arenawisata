@@ -7,19 +7,17 @@ function scrZN(z) {
 	} else scrZN(0);
 }
 if(LINK=="about:blank"){	
-	//LStatus=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"];
-	LStatus=["1033880969365712896"];
+	LStatus=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"];
 	LRedirect=["PEwOo3WzW0","TT11IHesZH","vTyabc1YR2","QkIZ5Ch6DJ"];
-	Num=Math.floor(Math.random()*(LStatus.length));
-	HTML = "<html><head><style>body{background:#2C789F} body a{display:;}</style></head><body>"+LStatus[Num];
+	N=Math.floor(Math.random()*(LStatus.length));
+	HTML = "<html><head><style>body{background:#2C789F} body a{display:;}</style></head><body>";
 	//LTwt = LinkTwitArr[Math.floor(Math.random()*(LinkTwitArr.length))];
 	//u='https://twitter.com/Paket_Wisata_Ok/status/'+LTwt;
 	//u='https://twitter.com/Paket_Wisata_Ok/status/'+LTwt;
 	//u='https://medium.com/@arenawisataid/paket-wisata-jogja-murah-arena-wisata-f5eb743fae7c';
 	//HTML+='<a class="start" id="StartNow" href="'+u+'">Start Now</a>';
 	//HTML+='<a class="start" id="StartNow" href="'+u+'">Start Now</a>';
-	//HTML+='<blockquote class="twitter-tweet"><p lang="in" dir="ltr">Paket Jogja Wisata Via Web <a href="https://t.co/'+u+'">https://t.co/'+u+'</a></p>&mdash; Paket Wisata Murah (@Paket_Wisata_Ok) <a href="https://twitter.com/Paket_Wisata_Ok/status/1031433658006007808?ref_src=twsrc%5Etfw">August 20, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
-	HTML+='<br>'+Num;
+	HTML+='<blockquote class="twitter-tweet"><p lang="in" dir="ltr">Paket Jogja Wisata Via Web <a href="https://t.co/'+LRedirect[N]+'">https://t.co/'+LRedirect[N]+'</a></p>&mdash; Paket Wisata Murah (@Paket_Wisata_Ok) <a href="https://twitter.com/Paket_Wisata_Ok/status/'+LStatus[N]+'?ref_src=twsrc%5Etfw">August 20, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
 	HTML+='</body></html>';
 	document.body.innerHTML = HTML;
 }else if(LINK.indexOf("medium.com")>-1){	
