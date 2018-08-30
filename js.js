@@ -26,11 +26,11 @@ if(LINK=="about:blank"){
 }else if(LINK.indexOf("arenawisata.")>-1){
 	var Uriz= (LINK).split("/");
 	if(Uriz[3]==""){
-		setTimeout(function(){scrZN(0)},3000);
+		setTimeout(function(){scrZN(0)},1000);
 		setTimeout(function(){document.querySelector("[href='paket-wisata-jogja']").click();},((100*Math.floor((Math.random() * 100) + 1))+30000));
 		
 	}else if(Uriz[3]=="paket-wisata-jogja.html"){
-		setTimeout(function(){scrZN(0)},3000);
+		setTimeout(function(){scrZN(0)},1000);
 		setTimeout(function(){document.querySelectorAll(".entry p>a")[6].click();},((100*Math.floor((Math.random() * 100) + 1))+60000));
 	}else if(Uriz[4]=="paket-wisata-jogja-murah"){
 		var CekL = document.querySelectorAll("a[href*='paket-wisata-jogja.html']");
@@ -40,13 +40,14 @@ if(LINK=="about:blank"){
 		}
 	}else if(Uriz[3]=="paket-wisata-jogja"){
 		aLink = document.querySelectorAll(".konten a");
-		setTimeout(function(){scrZN(0)},3000);
+		setTimeout(function(){scrZN(0)},1000);
 		setTimeout(function(){
 			var L = aLink[Math.floor((Math.random() * aLink.length) + 0)];
 			L.href = L.href+"?Z=Yes";
 			L.click();
 		},((100*Math.floor((Math.random() * 100) + 1))+30000));
 	} else{
+		setTimeout(function(){scrZN(0)},1000);
 		setTimeout(function(){
 			if(Math.floor(Math.random()*2)){
 				var Related = document.querySelectorAll("#related-posts a");
@@ -55,6 +56,8 @@ if(LINK=="about:blank"){
 		},((100*Math.floor((Math.random() * 100) + 1))+60000));
 	}
 	
+}else if(LINK.indexOf(".w3-directory.com")>-1){
+	location.href='about:blank';
 }else if(LINK.indexOf("mobile.twitter")>-1){
 	//setTimeout(function(){document.body.innerHTML = "SAPI";},5000);
 	function CekLink(No=0){
