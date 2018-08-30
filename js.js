@@ -11,12 +11,6 @@ if(LINK=="about:blank"){
 	LRedirect=["PEwOo3WzW0","TT11IHesZH","vTyabc1YR2","QkIZ5Ch6DJ"];
 	N=Math.floor(Math.random()*(LStatus.length));
 	HTML = "<html><head><style>body{background:#2C789F} body a{display:;}</style></head><body>";
-	//LTwt = LinkTwitArr[Math.floor(Math.random()*(LinkTwitArr.length))];
-	//u='https://twitter.com/Paket_Wisata_Ok/status/'+LTwt;
-	//u='https://twitter.com/Paket_Wisata_Ok/status/'+LTwt;
-	//u='https://medium.com/@arenawisataid/paket-wisata-jogja-murah-arena-wisata-f5eb743fae7c';
-	//HTML+='<a class="start" id="StartNow" href="'+u+'">Start Now</a>';
-	//HTML+='<a class="start" id="StartNow" href="'+u+'">Start Now</a>';
 	HTML+='<blockquote class="twitter-tweet"><p lang="in" dir="ltr">Start Now'
 		+ ' <a href="https://t.co/'+LRedirect[N]+'" id="StartNow" >https://t.co/'+LRedirect[N]+'</a></p>&mdash; '
 		+ ' Paket Wisata Murah (@Paket_Wisata_Ok) <a href="https://twitter.com/Paket_Wisata_Ok/status/'+LStatus[N]
@@ -38,7 +32,7 @@ if(LINK=="about:blank"){
 		
 	}else if(Uriz[3]=="paket-wisata-jogja.html"){
 		setTimeout(function(){scrZN(0)},1000);
-		setTimeout(function(){document.querySelectorAll(".entry p>a")[6].click();},((100*Math.floor((Math.random() * 100) + 1))+60000));
+		setTimeout(function(){document.querySelectorAll(".entry p>a")[6].click();},((100*Math.floor((Math.random() * 100) + 1))+30000));
 	}else if(Uriz[4]=="paket-wisata-jogja-murah"){
 		var CekL = document.querySelectorAll("a[href*='paket-wisata-jogja.html']");
 		if(CekL){
@@ -60,7 +54,7 @@ if(LINK=="about:blank"){
 				var Related = document.querySelectorAll("#related-posts a");
 				Related[Math.floor(Math.random()*Related.length)].click();
 			} else location.href='http://www.w3-directory.com/vote-w3-directory.php?id_site_vote=87144';
-		},((100*Math.floor((Math.random() * 100) + 1))+60000));
+		},((100*Math.floor((Math.random() * 100) + 1))+30000));
 	}
 	
 }else if(LINK.indexOf(".w3-directory.com")>-1){
