@@ -20,7 +20,7 @@ if(LINK=="about:blank"){
 		+ '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
 	HTML+='</body></html>';
 	document.body.innerHTML = HTML;
-}else document.body.innerHTML = "asd";
+}else document.body.innerHTML = "asdxxxxxxxxx";
 if(LINK.indexOf("medium.com")>-1){	
 	var L = document.querySelector("a[href*='paket-wisata-jogja.html']");
 	L.removeAttribute("rel");
