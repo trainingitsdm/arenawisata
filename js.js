@@ -6,10 +6,14 @@ function scrZN(z) {
 		setTimeout(function(){scrZN(z);},1000);
 	} else scrZN(0);
 }
+
 if(LINK=="about:blank"){	
+	
+	//G-Plus, arenawisata, medium, Facebook
 	LStatus=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"];
 	LRedirect=["PEwOo3WzW0","TT11IHesZH","vTyabc1YR2","QkIZ5Ch6DJ"];
-	N=Math.floor(Math.random()*(LStatus.length));
+	//N=Math.floor(Math.random()*(LStatus.length));
+	N=Math.floor(Math.random()*(0));
 	HTML = "<html><head><style>body{background:#2C789F} body a{display:;}</style></head><body>";
 	HTML+='<blockquote class="twitter-tweet"><p lang="in" dir="ltr">Start Now'
 		+ ' <a href="https://t.co/'+LRedirect[N]+'" id="StartNow" >https://t.co/'+LRedirect[N]+'</a></p>&mdash; '
@@ -24,6 +28,18 @@ if(LINK=="about:blank"){
 	L.removeAttribute("target");
 	L.click();
 	
+}else if(LINK.indexOf("plus.google.com")>-1){
+	var a = document.querySelectorAll("[data-oid='114771181492638643285']");
+	[].forEach.call(a,function(A,B){
+		if(A.innerText=='Arena wisata id')A.click();
+	});
+	
+	function CekLink(){
+		var src = document.querySelectorAll("[src='https://s2.googleusercontent.com/s2/favicons?sz=32&domain_url=https%3A%2F%2Fwww.arenawisata.id%2Fpaket-wisata-jogja.html']");
+		if(src.length) src[0].nextElementSibling.click();
+		else setTimeout(function(){ CekLink()},1000);
+	}
+	 CekLink();
 }else if(LINK.indexOf("arenawisata.")>-1){
 	var Uriz= (LINK).split("/");
 	if(Uriz[3]==""){
