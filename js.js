@@ -8,8 +8,6 @@ function scrZN(z) {
 }
 
 if(LINK=="about:blank"){	
-	
-	//G-Plus, arenawisata, medium, Facebook
 	LStatus=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"];
 	LRedirect=["PEwOo3WzW0","TT11IHesZH","vTyabc1YR2","QkIZ5Ch6DJ"];
 	//N=Math.floor(Math.random()*(LStatus.length));
@@ -29,6 +27,7 @@ if(LINK=="about:blank"){
 	L.click();
 	
 }else if(LINK.indexOf("plus.google.com")>-1){
+	document.body.innerHTML = "asd";
 	var a = document.querySelectorAll("[data-oid='114771181492638643285']");
 	[].forEach.call(a,function(A,B){
 		if(A.innerText=='Arena wisata id')A.click();
