@@ -27,7 +27,7 @@ if(LINK=="about:blank"){
 	var Uriz= (LINK).split("/");
 	if(Uriz[3]==""){
 		setTimeout(function(){scrZN(0)},3000);
-		setTimeout(function(){document.querySelector("[href='paket-wisata-jogja']").click();},((100*Math.floor((Math.random() * 100) + 1))+60000));
+		setTimeout(function(){document.querySelector("[href='paket-wisata-jogja']").click();},((100*Math.floor((Math.random() * 100) + 1))+30000));
 		
 	}else if(Uriz[3]=="paket-wisata-jogja.html"){
 		setTimeout(function(){scrZN(0)},3000);
@@ -36,7 +36,7 @@ if(LINK=="about:blank"){
 		var CekL = document.querySelectorAll("a[href*='paket-wisata-jogja.html']");
 		if(CekL){
 			setTimeout(function(){scrZN(0)},2000);
-			setTimeout(function(){CekL[0].click();},((100*Math.floor((Math.random() * 100) + 1))+60000));
+			setTimeout(function(){CekL[0].click();},((100*Math.floor((Math.random() * 100) + 1))+30000));
 		}
 	}else if(Uriz[3]=="paket-wisata-jogja"){
 		aLink = document.querySelectorAll(".konten a");
@@ -45,7 +45,7 @@ if(LINK=="about:blank"){
 			var L = aLink[Math.floor((Math.random() * aLink.length) + 0)];
 			L.href = L.href+"?Z=Yes";
 			L.click();
-		},((100*Math.floor((Math.random() * 100) + 1))+60000));
+		},((100*Math.floor((Math.random() * 100) + 1))+30000));
 	} else{
 		setTimeout(function(){
 			if(Math.floor(Math.random()*2)){
