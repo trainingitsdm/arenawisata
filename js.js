@@ -43,7 +43,7 @@ if(LINK=="about:blank"){
 		setTimeout(function(){scrZN(0)},1000);
 		setTimeout(function(){
 			var L = aLink[Math.floor((Math.random() * aLink.length) + 0)];
-			L.href = L.href+"?Z=Yes";
+			L.href = L.href;
 			L.click();
 		},((100*Math.floor((Math.random() * 100) + 1))+30000));
 	} else{
