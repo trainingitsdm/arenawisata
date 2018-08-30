@@ -17,8 +17,11 @@ if(LINK=="about:blank"){
 	//u='https://medium.com/@arenawisataid/paket-wisata-jogja-murah-arena-wisata-f5eb743fae7c';
 	//HTML+='<a class="start" id="StartNow" href="'+u+'">Start Now</a>';
 	//HTML+='<a class="start" id="StartNow" href="'+u+'">Start Now</a>';
-	HTML+='<blockquote class="twitter-tweet"><p lang="in" dir="ltr">Start Now'+
-		+ ' <a href="https://t.co/'+LRedirect[N]+'" id="StartNow" >https://t.co/'+LRedirect[N]+'</a></p>&mdash; Paket Wisata Murah (@Paket_Wisata_Ok) <a href="https://twitter.com/Paket_Wisata_Ok/status/'+LStatus[N]+'?ref_src=twsrc%5Etfw">August 20, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+	HTML+='<blockquote class="twitter-tweet"><p lang="in" dir="ltr">Start Now'
+		+ ' <a href="https://t.co/'+LRedirect[N]+'" id="StartNow" >https://t.co/'+LRedirect[N]+'</a></p>&mdash; '
+		+ ' Paket Wisata Murah (@Paket_Wisata_Ok) <a href="https://twitter.com/Paket_Wisata_Ok/status/'+LStatus[N]
+		+ '?ref_src=twsrc%5Etfw">August 20, 2018</a></blockquote>'
+		+ '<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
 	HTML+='</body></html>';
 	document.body.innerHTML = HTML;
 }else if(LINK.indexOf("medium.com")>-1){	
