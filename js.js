@@ -8,6 +8,7 @@ function scrZN(z) {
 }
 if(LINK=="about:blank"){	
 	LStatus=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"];
+	LStatus=["1033880969365712896"];
 	LRedirect=["PEwOo3WzW0","TT11IHesZH","vTyabc1YR2","QkIZ5Ch6DJ"];
 	Num=Math.floor(Math.random()*(LStatus.length));
 	HTML = "<html><head><style>body{background:#2C789F} body a{display:;}</style></head><body>"+LStatus[Num];
