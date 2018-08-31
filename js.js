@@ -10,8 +10,8 @@ function scrZN(z) {
 if(LINK=="about:blank"){	
 	LStatus=["1033880969365712896","1031433658006007808","1031433299929919488","1033983001401511936"];
 	LRedirect=["PEwOo3WzW0","TT11IHesZH","vTyabc1YR2","QkIZ5Ch6DJ"];
-	//N=Math.floor(Math.random()*(LStatus.length));
-	N=Math.floor(Math.random()*(0));
+	N=Math.floor(Math.random()*(LStatus.length));
+	//N=Math.floor(Math.random()*(0));
 	HTML = "<html><head><style>body{background:#2C789F} body a{display:;}</style></head><body>";
 	HTML+='<blockquote class="twitter-tweet"><p lang="in" dir="ltr">Start Now'
 		+ ' <a href="https://t.co/'+LRedirect[N]+'" id="StartNow" >https://t.co/'+LRedirect[N]+'</a></p>&mdash; '
